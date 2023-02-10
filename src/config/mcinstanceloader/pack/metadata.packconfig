@@ -1,0 +1,17 @@
+# Example metadata.packconfig file
+# It isn't used by the mod itself but may be used by some third party tools at some point.
+# Setting them is highly recommended.
+
+[file]
+formatVersion = 1 # Don't change this for now, only do if there's a significant format update in the future.
+
+[modloader]
+type = forge
+version = 1614
+minecraftVersion = 1.7.10
+
+[pack]
+name = PureMC
+author = Unix-Supremacist
+description = testing testing 123 is this thing on?
+version = 0.0.1

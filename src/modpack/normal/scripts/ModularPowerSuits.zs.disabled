@@ -1,0 +1,94 @@
+#Name: ModularPowerSuits.zs
+#Author: Unix Supremacist
+
+print("Initializing 'ModularPowerSuits.zs'...");
+
+#wiring
+recipes.remove(<powersuits:powerArmorComponent>);
+recipes.addShaped(<powersuits:powerArmorComponent>, [[<IC2:item.ic2cable:1>, <ore:ingotEnergeticSilver>, <IC2:item.ic2cable:1>], [<ore:ingotElectrumFlux>, <ore:ingotElectrumFlux>, <ore:ingotElectrumFlux>], [<IC2:item.ic2cable:1>, <ore:ingotEnergeticSilver>, <IC2:item.ic2cable:1>]]);
+
+#solenoid
+recipes.remove(<powersuits:powerArmorComponent:1>);
+recipes.addShaped(<powersuits:powerArmorComponent:1>, [[<powersuits:powerArmorComponent>, <ore:ingotElectrumFlux>, <powersuits:powerArmorComponent>], [<powersuits:powerArmorComponent>, <ore:ingotElectrumFlux>, <powersuits:powerArmorComponent>], [<powersuits:powerArmorComponent>, <ore:ingotElectrumFlux>, <powersuits:powerArmorComponent>]]);
+
+#servo
+recipes.remove(<powersuits:powerArmorComponent:2>);
+recipes.addShaped(<powersuits:powerArmorComponent:2>, [[<powersuits:powerArmorComponent>, <ore:plateBrass>, <powersuits:powerArmorComponent>], [<powersuits:powerArmorComponent:1>, <ThermalExpansion:material>, <powersuits:powerArmorComponent:1>], [<powersuits:powerArmorComponent>, <ore:plateBrass>, <powersuits:powerArmorComponent>]]);
+
+#wing
+recipes.remove(<powersuits:powerArmorComponent:3>);
+recipes.addShaped(<powersuits:powerArmorComponent:3>, [[null, <ore:blockGlassHardened>, <ore:circuitAdvanced>], [<ore:plateMagnalium>, <ore:plateAlloyCarbon>, <powersuits:powerArmorComponent:1>], [<ore:plateMagnalium>]]);
+
+#ion thruster
+recipes.remove(<powersuits:powerArmorComponent:4>);
+recipes.addShaped(<powersuits:powerArmorComponent:4>, [[<ore:plateAlloyIridium>, <ore:craftingSuperconductor>, <ore:plateAlloyIridium>], [<ore:plateEnderium>, <powersuits:powerArmorComponent:7>, <ore:plateEnderium>], [<powersuits:powerArmorComponent:11>, null, <powersuits:powerArmorComponent:11>]]);
+
+#lv batt
+recipes.remove(<powersuits:powerArmorComponent:5>);
+recipes.addShaped(<powersuits:powerArmorComponent:5>, [[<ore:ingotSteel>, <ore:batteryElite>, <ore:ingotSteel>], [<ore:ingotEnergeticSilver>, <ThermalExpansion:capacitor:3>, <ore:ingotEnergeticSilver>], [<ore:ingotSteel>, <ore:batteryElite>, <ore:ingotSteel>]]);
+
+#mv batt
+recipes.remove(<powersuits:powerArmorComponent:6>);
+recipes.addShaped(<powersuits:powerArmorComponent:6>, [[<ore:ingotTitanium>, <ore:batteryMaster>, <ore:ingotTitanium>], [<ore:ingotElectrumFlux>, <ThermalExpansion:capacitor:4>, <ore:ingotElectrumFlux>], [<ore:ingotTitanium>, <ore:batteryMaster>, <ore:ingotTitanium>]]);
+
+#hv batt
+recipes.remove(<powersuits:powerArmorComponent:7>);
+recipes.addShaped(<powersuits:powerArmorComponent:7>, [[<ore:ingotChrome>, <ore:batteryUltimate>, <ore:ingotChrome>], [<ore:ingotGelidEnderium>, <ThermalExpansion:capacitor:5>, <ore:ingotGelidEnderium>], [<ore:ingotChrome>, <ore:batteryUltimate>, <ore:ingotChrome>]]);
+
+#parachute
+recipes.remove(<powersuits:powerArmorComponent:8>);
+recipes.addShaped(<powersuits:powerArmorComponent:8> , [[<ore:blockWoolWhite>, <ore:blockWoolWhite>, <ore:blockWoolWhite>], [<minecraft:string>, null, <minecraft:string>], [<ore:plateAlloyCarbon>, <ore:cellNitrogen>, <ore:plateAlloyCarbon>]]);
+
+#basic plating
+recipes.remove(<powersuits:powerArmorComponent:9>);
+recipes.addShaped(<powersuits:powerArmorComponent:9>, [[<ore:plateSteel>, <ore:plateSteel>], [<ore:gearInvar>, <ore:plateSteel>], [<ore:plateSteel>, <ore:plateSteel>]]);
+
+#advanced plating
+recipes.remove(<powersuits:powerArmorComponent:10>);
+recipes.addShaped(<powersuits:powerArmorComponent:10>, [[<ore:plateTitanium>, <ore:plateTitanium>], [<ore:gearTungstenSteel>, <ore:plateTitanium>], [<ore:plateTitanium>, <ore:plateTitanium>]]);
+
+#force field emitter
+recipes.remove(<powersuits:powerArmorComponent:11>);
+recipes.addShaped(<powersuits:powerArmorComponent:11>, [[<ore:ingotTungstenSteel>, <powersuits:powerArmorComponent:1>, <ore:ingotTungstenSteel>], [<ore:craftingSuperconductor>, <ore:circuitMaster>, <ore:craftingSuperconductor>], [<ore:ingotGelidEnderium>, <ThermalExpansion:Frame:11>, <ore:ingotGelidEnderium>]]);
+
+#hologram emitter
+recipes.remove(<powersuits:powerArmorComponent:12>);
+recipes.addShaped(<powersuits:powerArmorComponent:12>, [[<ore:gemRuby>, <ore:gemGreenSapphire>, <ore:gemSapphire>], [<RedstoneArsenal:material:193>, <rfdrills:motor_te:8>, <RedstoneArsenal:material:193>], [<powersuits:powerArmorComponent>, <powersuits:powerArmorComponent>, <powersuits:powerArmorComponent>]]);
+
+#carbon myofiber
+recipes.remove(<powersuits:powerArmorComponent:13>);
+recipes.addShaped(<powersuits:powerArmorComponent:13>, [[<ore:plateAlloyCarbon>, null, <ore:plateAlloyCarbon>], [<ore:plateAlloyCarbon>, null, <ore:plateAlloyCarbon>], [<ore:plateAlloyCarbon>, null, <ore:plateAlloyCarbon>]]);
+
+#control circuit
+recipes.remove(<powersuits:powerArmorComponent:14>);
+recipes.addShaped(<powersuits:powerArmorComponent:14>, [[<ore:gemGelid>, <ore:circuitAdvanced>, <ore:ingotGelidEnderium>], [<ore:circuitData>, <ore:circuitMaster>, <ore:circuitAdvanced>], [<ore:ingotGelidEnderium>, <ore:circuitData>, <ore:gemGelid>]]);
+
+#myofiber gel
+recipes.remove(<powersuits:powerArmorComponent:15>);
+recipes.addShaped(<powersuits:powerArmorComponent:15>, [[<minecraft:magma_cream>], [<ore:dustRubber>], [<minecraft:magma_cream>]]);
+
+#artificial muscle
+recipes.remove(<powersuits:powerArmorComponent:16>);
+recipes.addShaped(<powersuits:powerArmorComponent:16>, [[<powersuits:powerArmorComponent:13>, <ore:dustRubber>, <powersuits:powerArmorComponent:13>], [<powersuits:powerArmorComponent:13>, <powersuits:powerArmorComponent:15>, <powersuits:powerArmorComponent:13>], [<powersuits:powerArmorComponent:13>, <powersuits:powerArmorComponent:15>, <powersuits:powerArmorComponent:13>]]);
+
+#solar panel
+recipes.remove(<powersuits:powerArmorComponent:17>);
+recipes.addShaped(<powersuits:powerArmorComponent:17>, [[<ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>], [<ore:plateAlloyIridium>, <ore:circuitMaster>, <ore:plateAlloyIridium>], [<ThermalExpansion:material:1>, <ThermalExpansion:material:3>, <ThermalExpansion:material:2>]]);
+
+#magnet
+recipes.remove(<powersuits:powerArmorComponent:18>);
+recipes.addShaped(<powersuits:powerArmorComponent:18>, [[<ore:plateTitanium>, <ore:craftingSuperconductor>, <ore:plateTitanium>], [<powersuits:powerArmorComponent:1>, <powersuits:powerArmorComponent:1>, <powersuits:powerArmorComponent:1>], [<ore:plateTitanium>, <ore:craftingSuperconductor>, <ore:plateTitanium>]]);
+
+#computer chip
+recipes.remove(<powersuits:powerArmorComponent:19>);
+recipes.addShaped(<powersuits:powerArmorComponent:19>, [[<ore:circuitAdvanced>, <ore:circuitData>], [<ore:circuitData>, <ore:circuitAdvanced>, <ore:circuitData>], [<ore:circuitAdvanced>, <ore:circuitData>, <ore:circuitAdvanced>]]);
+
+#rubber hose
+recipes.remove(<powersuits:powerArmorComponent:20>);
+recipes.addShaped(<powersuits:powerArmorComponent:20>, [[<ore:dustRubber>, <ore:dustRubber>, <ore:dustRubber>], [<powersuits:powerArmorComponent:13>, <powersuits:powerArmorComponent:13>, <powersuits:powerArmorComponent:13>], [<ore:dustRubber>, <ore:dustRubber>, <ore:dustRubber>]]);
+
+#nitrogen bucket
+recipes.remove(<powersuits:powerArmorComponent:21>);
+recipes.addShapeless(<powersuits:powerArmorComponent:21>, [<minecraft:bucket>, <gregtech_addon:metaitem_1:30012>]);
+
+print("Initialized 'ModularPowerSuits.zs'");
