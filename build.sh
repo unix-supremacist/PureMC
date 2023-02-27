@@ -17,8 +17,11 @@ LWJGLIFYJAR=lwjgl3ify-$LWJGLIFY.jar
 LWJGLIFYDL=https://github.com/GTNewHorizons/lwjgl3ify/releases/download/$LWJGLIFY/$LWJGLIFYDIR.zip
 LWJGLIFYDL2=https://github.com/GTNewHorizons/lwjgl3ify/releases/download/$LWJGLIFY/$LWJGLIFYJAR
 UNIMIXINS=$(cat var/unimixinsversion)
-UNIMIXINSDIR=unimixins-modular-1.7.10-$UNIMIXINS
-UNIMIXINSDL=https://github.com/LegacyModdingMC/UniMixins/releases/download/$UNIMIXINS/$UNIMIXINSDIR.zip
+MIXIN=+unimix-0.11.9+mixin.0.8.5
+UNIMIXINSCOM=_unimixins-compat-1.7.10-$UNIMIXINS
+UNIMIXINSMIX=_unimixins-mixin-1.7.10-$UNIMIXINS$MIXIN
+UNIMIXINSCOMDL=https://github.com/LegacyModdingMC/UniMixins/releases/download/$UNIMIXINS/$UNIMIXINSCOM.jar
+UNIMIXINSMIXDL=https://github.com/LegacyModdingMC/UniMixins/releases/download/$UNIMIXINS/$UNIMIXINSMIX.jar
 MCIL=$(cat var/mcilversion)
 MCILJAR=mcinstanceloader-$MCIL.jar
 MCILDL=https://github.com/HRudyPlayZ/MCInstanceLoader/releases/download/1.7.10-$MCIL/$MCILJAR
@@ -40,9 +43,9 @@ mkdir "$OUTDIR/" -p
 #Download stuff needed to build to the cache
 [ ! -f "$CACHEDIR/$LWJGLIFYDIR.zip" ] && wget -q "$LWJGLIFYDL" -P "$CACHEDIR/"
 [ ! -d "$CACHEDIR/$LWJGLIFYDIR" ] && 7z x "$CACHEDIR/$LWJGLIFYDIR.zip" -o"$CACHEDIR/$LWJGLIFYDIR" > /dev/null
-[ ! -f "$CACHEDIR/$LWJGLIFYJAR" ] &&  wget -q "$LWJGLIFYDL2" -P "CACHEDIR/"
-[ ! -f "$CACHEDIR/$UNIMIXINSDIR.zip" ] &&  wget -q "$UNIMIXINSDL" -P "CACHEDIR/"
-[ ! -d "$CACHEDIR/$UNIMIXINSDIR" ] && 7z x "$CACHEDIR/$UNIMIXINSDIR.zip" -o"$CACHEDIR/$UNIMIXINSDIR" > /dev/null
+[ ! -f "$CACHEDIR/$LWJGLIFYJAR" ] &&  wget -q "$LWJGLIFYDL2" -P "$CACHEDIR/"
+[ ! -f "$CACHEDIR/$UNIMIXINSCOM.jar" ] && wget -q "$UNIMIXINSCOMDL" -P "$CACHEDIR/"
+[ ! -f "$CACHEDIR/$UNIMIXINSMIX.jar" ] && wget -q "$UNIMIXINSMIXDL" -P "$CACHEDIR/"
 [ ! -f "$CACHEDIR/$MCILJAR" ] &&  wget -q "$MCILDL" -P "$CACHEDIR/"
 [ ! -f "$CACHEDIR/$MODERNSPLASHJAR" ] && wget -q "$MODERNSPLASHDL" -P "$CACHEDIR/"
 
@@ -54,20 +57,14 @@ mkdir "$OUTDIR/" -p
 [ -f "$CACHEDIR/$LWJGLIFYJAR" ] && cp "$CACHEDIR/$LWJGLIFYJAR" "$BLD11DIR/.minecraft/mods/"
 
 #Install Essentials to Java 8 Directory
-[ -d "$CACHEDIR/$UNIMIXINSDIR" ] && cp "$(find $CACHEDIR/ -name "*unimix-*")" "$BLD8DIR/.minecraft/mods/"
-[ -d "$CACHEDIR/$UNIMIXINSDIR" ] && cp "$(find $CACHEDIR/ -name "*-compat*")" "$BLD8DIR/.minecraft/mods/"
-[ -d "$CACHEDIR/$UNIMIXINSDIR" ] && cp "$(find $CACHEDIR/ -name "*gtnhmixins-*")" "$BLD8DIR/.minecraft/mods/"
-[ -d "$CACHEDIR/$UNIMIXINSDIR" ] && cp "$(find $CACHEDIR/ -name "*mixingasm*")" "$BLD8DIR/.minecraft/mods/"
-[ -d "$CACHEDIR/$UNIMIXINSDIR" ] && cp "$(find $CACHEDIR/ -name "*spongemixins*")" "$BLD8DIR/.minecraft/mods/"
+[ -f "$CACHEDIR/$UNIMIXINSMIX.jar" ] && cp "$CACHEDIR/$UNIMIXINSMIX.jar" "$BLD8DIR/.minecraft/mods/"
+[ -f "$CACHEDIR/$UNIMIXINSCOM.jar" ] && cp "$CACHEDIR/$UNIMIXINSCOM.jar" "$BLD8DIR/.minecraft/mods/"
 [ -f "$CACHEDIR/$MCILJAR" ] && cp "$CACHEDIR/$MCILJAR" "$BLD8DIR/.minecraft/mods/"
 [ -f "$CACHEDIR/$MODERNSPLASHJAR" ] && cp "$CACHEDIR/$MODERNSPLASHJAR" "$BLD8DIR/.minecraft/mods/"
 
 #Install Essentials to Java 11 Directory
-[ -d "$CACHEDIR/$UNIMIXINSDIR" ] && cp "$(find $CACHEDIR/ -name "*unimix-*")" "$BLD11DIR/.minecraft/mods/"
-[ -d "$CACHEDIR/$UNIMIXINSDIR" ] && cp "$(find $CACHEDIR/ -name "*-compat*")" "$BLD11DIR/.minecraft/mods/"
-[ -d "$CACHEDIR/$UNIMIXINSDIR" ] && cp "$(find $CACHEDIR/ -name "*gtnhmixins-*")" "$BLD11DIR/.minecraft/mods/"
-[ -d "$CACHEDIR/$UNIMIXINSDIR" ] && cp "$(find $CACHEDIR/ -name "*mixingasm*")" "$BLD11DIR/.minecraft/mods/"
-[ -d "$CACHEDIR/$UNIMIXINSDIR" ] && cp "$(find $CACHEDIR/ -name "*spongemixins*")" "$BLD11DIR/.minecraft/mods/"
+[ -f "$CACHEDIR/$UNIMIXINSMIX.jar" ] && cp "$CACHEDIR/$UNIMIXINSMIX.jar" "$BLD11DIR/.minecraft/mods/"
+[ -f "$CACHEDIR/$UNIMIXINSCOM.jar" ] && cp "$CACHEDIR/$UNIMIXINSCOM.jar" "$BLD11DIR/.minecraft/mods/"
 [ -f "$CACHEDIR/$MCILJAR" ] && cp "$CACHEDIR/$MCILJAR" "$BLD11DIR/.minecraft/mods/"
 [ -f "$CACHEDIR/$MODERNSPLASHJAR" ] && cp "$CACHEDIR/$MODERNSPLASHJAR" "$BLD11DIR/.minecraft/mods/"
 
@@ -90,6 +87,9 @@ mkdir "$OUTDIR/" -p
 [ -f "$COMMONRESCFG" ] && cat "$COMMONRESCFG" "pch/$JAVA11/$JAVA11.packconfig" > "$BLD11DIR/.minecraft/config/mcinstanceloader/pack/resources.packconfig"
 [ -d "$BLD11DIR/.minecraft/config/mcinstanceloader/pack" ] && cd "$BLD11DIR/.minecraft/config/mcinstanceloader/pack" && zip -r ../pack.mcinstance ./* > /dev/null && cd ../../../../../..
 [ -f "$BLD11DIR/.minecraft/config/mcinstanceloader/pack.mcinstance" ] && rm -r "$BLD11DIR/.minecraft/config/mcinstanceloader/pack/"
+
+#Copy pack icon
+[ -f puremc.png ] && cp -r puremc.png "$BLD8DIR/puremc" && cp -r puremc.png "$BLD11DIR/puremc"
 
 #Build Final Java 8 zip
 [ -f "$OUTDIR/$NAME-Java$JAVA8-$VERSION.zip" ] && rm "$OUTDIR/$NAME-Java$JAVA8-$VERSION.zip"

@@ -1,11 +1,4 @@
 #Mods
-[Actually Additions]
-type = curseforge
-destination = mods/ActuallyAdditions-1.7.10-r21.jar
-projectId = 228404
-fileId = 2274681
-side = both
-
 [Adventure Backpack]
 type = url
 destination = mods/adventurebackpack-1.0.7-GTNH.jar
@@ -20,18 +13,12 @@ projectId = 533258
 fileId = 3479308
 side = both
 
+#lacking source code
 [Animation API]
 type = curseforge
 destination = mods/AnimationAPI-1.7.10-1.2.4.jar
 projectId = 77191
 fileId = 2221721
-side = both
-
-[Animus]
-type = curseforge
-destination = mods/NOVA-2015-10-09-universal.jar
-projectId = 229664
-fileId = 2261689
 side = both
 
 #[Anti ID Conflict]
@@ -69,20 +56,6 @@ projectId = 677782
 fileId = 4336147
 side = both
 
-[Aroma1997's Core]
-type = curseforge
-destination = mods/Aroma1997Core-1.7.10-1.0.2.16.jar
-projectId = 223735
-fileId = 2257644
-side = both
-
-[Aroma1997's Dimensional World]
-type = curseforge
-destination = mods/Aroma1997s-Dimensional-World-1.7.10-1.1.0.1.jar
-projectId = 60092
-fileId = 2219018
-side = both
-
 [Ars Magica 2.5]
 type = modrinth
 destination = mods/AM2-1.5.0-hotfix.jar
@@ -101,13 +74,6 @@ type = modrinth
 destination = mods/Audino-1.1.0.jar
 versionId = JSYs5YJw
 sourceFileName = Audino-1.1.0.jar
-
-[Automagy]
-type = curseforge
-destination = mods/Automagy-1.7.10-0.28.2.jar
-projectId = 222153
-fileId = 2285272
-side = both
 
 [Avaritia]
 type = url
@@ -135,12 +101,6 @@ destination = mods/bdlib-1.7.10-1.9.8-GTNH.jar
 url = https://github.com/GTNewHorizons/bdlib/releases/download/1.9.8-GTNH/bdlib-1.7.10-1.9.8-GTNH.jar
 side = both
 MD5 = c74d6ed938db80f56a1ad5d760d4d112
-
-[Bee Better at Bees]
-type = curseforge
-destination = mods/BeeBetterAtBees-0.3.jar
-projectId = 244516
-fileId = 2297397
 
 #replace with a fork that lags less
 #[Better Foliage]
@@ -178,13 +138,6 @@ url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHo
 side = both
 MD5 = 166f234b78ce0d32883cb111730c7c75
 
-[Born in a Barn]
-type = curseforge
-destination = mods/Born in a Barn 1.7.x.jar
-projectId = 285789
-fileId = 2531565
-side = both
-
 [Botania]
 type = url
 destination = mods/Botania-1.9.14-GTNH.jar
@@ -219,6 +172,7 @@ url = https://github.com/GTNewHorizons/BuildCraftCompat/releases/download/7.1.12
 side = both
 MD5 = ad20153be49b506f74dba3a502db6fc4
 
+#arr remove when possible
 [Careful Cast Corrector]
 type = curseforge
 destination = mods/Careful Cast Corrector-2.0.jar
@@ -239,12 +193,6 @@ destination = mods/Chisel-2.10.17-GTNH.jar
 url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHorizons/Chisel/2.10.17-GTNH/Chisel-2.10.17-GTNH.jar
 side = both
 MD5 = d7c5c181fb8ddfcbb04ed2f8cd7c02b8
-
-[Chocolate Quest]
-type = curseforge
-destination = mods/chocolateQuest-1.7.10-1.1d.jar
-projectId = 60265
-fileId = 2254978
 
 [Chunk Pregenerator]
 type = curseforge
@@ -272,18 +220,14 @@ url = https://github.com/GTNewHorizons/CodeChickenLib/releases/download/1.1.8/Co
 side = both
 MD5 = 8538cd3e4ffb99684b55e20aefa373cb
 
+#Not Open source needs to be removed
 [CoFH Core]
 type = curseforge
 destination = mods/CoFHCore-[1.7.10]3.1.4-329.jar
 projectId = 69162
 fileId = 2388750
 
-[CoFHLib]
-type = curseforge
-destination = mods/CoFHLib-[1.7.10]1.2.1-185.jar
-projectId = 220333
-fileId = 2388747
-
+#questionable source the 1.7.10 jar doesnt seem to be validly opensource backport 1.8.9?
 [ComputerCraft]
 type = modrinth
 destination = mods/ComputerCraft1.75.jar
@@ -297,6 +241,7 @@ url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHo
 side = both
 MD5 = 76a22ef36d7504938da6cd3af4685dab
 
+#questionably open source needed for tinkers steelworks fix later
 [Cookie Core]
 type = curseforge
 destination = mods/CookieCore-1.7.10-1.4.0-11.jar
@@ -308,14 +253,8 @@ side = both
 type = url
 destination = mods/CoreTweaks-1.7.10-0.3.0.1+nomixin.jar
 url = https://github.com/makamys/CoreTweaks/releases/download/0.3.0.1/CoreTweaks-1.7.10-0.3.0.1+nomixin.jar
-side = client
+side = both
 MD5 = 8bc35d9a6f46e2e3519b04367d9c881d
-
-[Coro Util]
-type = curseforge
-destination = mods/coroutil-1.7.10-1.1.6.jar
-projectId = 237749
-fileId = 2388794
 
 [CraftTweaker]
 type = url
@@ -331,12 +270,13 @@ url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHo
 side = both
 MD5 = d991fbf2a3f58a156bb8d89fa0cb365b
 
-[Cutting Edge]
-type = url
-destination = mods/cuttingedge-1.7.10-1.0.0.jar
-url = https://github.com/jss2a98aj/CuttingEdge/releases/download/1.0.0/cuttingedge-1.7.10-1.0.0.jar
-side = both
-MD5 = c90892ef41742056a182014025bcc819
+#currently not licensed could be fixed later
+#[Cutting Edge]
+#type = url
+#destination = mods/cuttingedge-1.7.10-1.0.0.jar
+#url = https://github.com/jss2a98aj/CuttingEdge/releases/download/1.0.0/cuttingedge-1.7.10-1.0.0.jar
+#side = both
+#MD5 = c90892ef41742056a182014025bcc819
 
 [Damage Tilt]
 type = curseforge
@@ -344,11 +284,12 @@ destination = mods/DamageTilt-1.7.10-0.1.0.jar
 projectId = 411705
 fileId = 3097543
 
-[Default World Generator]
-type = curseforge
-destination = mods/DefaultWorldGenerator-1.7.10-0.1-b13-universal.jar
-projectId = 226188
-fileId = 2225179
+#mit licensed on curseforge but not github
+#[Default World Generator]
+#type = curseforge
+#destination = mods/DefaultWorldGenerator-1.7.10-0.1-b13-universal.jar
+#projectId = 226188
+#fileId = 2225179
 
 [Defense Tech]
 type = url
@@ -356,12 +297,6 @@ destination = mods/DefenseTech-1.7.10-1.0.1.46.jar
 url = https://s3.amazonaws.com/aidancbrady/defensetech/46/DefenseTech-1.7.10-1.0.1.46.jar
 side = both
 MD5 = d04b9adff4940e0552a85169d7c7e1d5
-
-[Dense Ores]
-type = curseforge
-destination = mods/denseores-1.6.2.jar
-projectId = 224942
-fileId = 2234692
 
 [Draconic Evolution]
 type = url
@@ -404,12 +339,6 @@ url = https://github.com/GTNewHorizons/EnderZoo/releases/download/1.0.23/EnderZo
 side = both
 MD5 = 7a51ed12be449ca82ae72a2173d9e49c
 
-#[Enderlicious]
-#type = curseforge
-#destination = mods/enderlicious-1.1.2.jar
-#projectId = 508777
-#fileId = 3504111
-
 [Ender Tech]
 type = curseforge
 destination = mods/EnderTech-1.7.10-0.3.2.405.jar
@@ -422,25 +351,6 @@ destination = mods/Et_Futurum_Requiem-2.4.2-nomixin.jar
 versionId = JxLCy656
 sourceFileName = Et_Futurum_Requiem-2.4.2-nomixin.jar
 
-[Eureka]
-type = curseforge
-destination = mods/Eureka-1.7.10-3.0.2.jar
-projectId = 222995
-fileId = 2235481
-
-[Extra Cells 2]
-type = url
-destination = mods/ExtraCells2-2.5.32.jar
-url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHorizons/ExtraCells2/2.5.32/ExtraCells2-2.5.32.jar
-side = both
-MD5 = 4289ad4f421dcbae4aa75949bc4d11a8
-
-[Extra Utilities]
-type = curseforge
-destination = mods/extrautilities-1.2.12.jar
-projectId = 225561
-fileId = 2264383
-
 [Extra Biomes XL]
 type = url
 destination = mods/extrabiomesxl_1.7.10-3.16.5.jar
@@ -448,12 +358,7 @@ url = https://cdn.discordapp.com/attachments/1044769590565163149/107183037090496
 side = both
 MD5 = ccab5841e027a73b000c7c3f66752a80
 
-[Extra TIC]
-type = curseforge
-destination = mods/ExtraTiC-1.7.10-1.4.6.jar
-projectId = 72728
-fileId = 2299292
-
+#remove next archaicfix update
 [FalsePatternLib]
 type = modrinth
 destination = mods/falsepatternlib-mc1.7.10-0.9.4.jar
@@ -465,12 +370,6 @@ type = curseforge
 destination = mods/FancyBlockParticles-1.7.x-2.4.1.jar
 projectId = 254441
 fileId = 2632103
-
-[Fast Leaf Decay]
-type = curseforge
-destination = mods/FastLeafDecay-30.jar
-projectId = 230976
-fileId = 3894512
 
 [Flying Cullers]
 type = modrinth
@@ -519,6 +418,7 @@ destination = mods/ForgottenRelics-1.7.3-[Final].jar
 projectId = 313427
 fileId = 2786664
 
+#mit on curseforge but not on git, needed however
 [FTB Tweaks]
 type = curseforge
 destination = mods/FTBTweaks-1.0.2.jar
@@ -539,12 +439,6 @@ url = https://github.com/GTNewHorizons/FTB-Utilities/releases/download/1.0.18.7-
 side = both
 MD5 = e6df9d8cd18208d24625d87dd6ae89da
 
-[Funky Locomotion]
-type = curseforge
-destination = mods/funky-locomotion-1.7.10-beta-7.jar
-projectId = 224190
-fileId = 2252223
-
 [Gadomancy]
 type = url
 destination = mods/gadomancy-1.0.8.9.jar
@@ -552,13 +446,7 @@ url = https://github.com/GTNewHorizons/Gadomancy/releases/download/1.0.8.9/gadom
 side = both
 MD5 = 38e494714e729b885919c026e8a93806
 
-#[Galacticraft 3]
-#type = url
-#destination = mods/Galacticraft-3.0.65-GTNH.jar
-#url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHorizons/Galacticraft/3.0.65-GTNH/Galacticraft-3.0.65-GTNH.jar
-#side = both
-#MD5 = bbd3d5810a7015068801902cdb5bb867
-
+#arr on 1.7.10 possibly fixible
 [Galacticraft 3 Core]
 type = url
 destination = mods/GalacticraftCore-1.7-3.0.12.504.jar
@@ -573,19 +461,13 @@ url = https://micdoodle8.com/new-builds/GC-1.7/504/Galacticraft-Planets-1.7-3.0.
 side = both
 MD5 = 1c598e13d56e55e87ba5349c21531c4a
 
-[Gendustry]
-type = url
-destination = mods/gendustry-1.6.5.5-GTNH.jar
-url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHorizons/gendustry/1.6.5.5-GTNH/gendustry-1.6.5.5-GTNH.jar
-side = both
-MD5 = 8911dbecdb00af4c2d7647b92c5e9d96
-
-[Gravitation Suite]
-type = url
-destination = mods/GraviSuite-1.7.10-2.0.3.jar
-url = https://forum.industrial-craft.net/core/attachment/4519-gravisuite-1-7-10-2-0-3-jar/
-side = both
-MD5 = 06b8f12110da8dcac38597458c8dfe24
+#arr
+#[Gravitation Suite]
+#type = url
+#destination = mods/GraviSuite-1.7.10-2.0.3.jar
+#url = https://forum.industrial-craft.net/core/attachment/4519-gravisuite-1-7-10-2-0-3-jar/
+#side = both
+#MD5 = 06b8f12110da8dcac38597458c8dfe24
 
 [GTNH Lib]
 type = url
@@ -607,6 +489,7 @@ destination = mods/HardcoreDarkness-MC1.7.10-1.7.jar
 projectId = 225957
 fileId = 2262352
 
+#arr but theres really no replacement for this, needs something big to happen
 [Hardcore Ender Expansion]
 type = url
 destination = mods/Hardcore-Ender-Expansion-1.9.7-GTNH.jar
@@ -633,11 +516,12 @@ destination = mods/iChunUtil-4.2.3.jar
 projectId = 229060
 fileId = 2338148
 
-[IndustrialCraft 2 Classic]
-type = curseforge
-destination = mods/IC2Classic-1.7.10-1.2.3.jar
-projectId = 242942
-fileId = 4074287
+#arr
+#[IndustrialCraft 2 Classic]
+#type = curseforge
+#destination = mods/IC2Classic-1.7.10-1.2.3.jar
+#projectId = 242942
+#fileId = 4074287
 
 [INpure Core]
 type = url
@@ -660,13 +544,6 @@ url = https://github.com/GTNewHorizons/ironchest/releases/download/6.0.71/IronCh
 side = both
 MD5 = 7a6e828e08508a6f4e40ce01dd8fa9fd
 
-[Iron Chests Minecarts]
-type = url
-destination = mods/IronChestMinecarts-1.7.10-1.0.8.jar
-url = https://github.com/GTNewHorizons/IronChestMinecarts/releases/download/1.0.8/IronChestMinecarts-1.7.10-1.0.8.jar
-side = both
-MD5 = cafdfdbbae415f91d351b977538f218a
-
 [Iron Tanks]
 type = url
 destination = mods/irontanks-1.7.10-1.2.6.jar
@@ -674,31 +551,13 @@ url = https://github.com/GTNewHorizons/Irontanks/releases/download/1.2.6/irontan
 side = both
 MD5 = 21f1e75bd44e04ddab02fd619d639ad0
 
+#needed but improperly licensed
 [It's the Little Things]
 type = url
 destination = mods/itlt-1.0.4.jar
 url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHorizons/itlt/1.0.4/itlt-1.0.4.jar
 side = both
 MD5 = 0b628714345b0609a85adf3c638074d9
-
-[Jabba]
-type = url
-destination = mods/Jabba-1.2.22.jar
-url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHorizons/Jabba/1.2.22/Jabba-1.2.22.jar
-side = both
-MD5 = e5d17491fb7fb7219739ebfffdf960de
-
-[Kleeslabs]
-type = curseforge
-destination = mods/kleeslabs-mc1.7.10-1.2.9.jar
-projectId = 241895
-fileId = 2284547
-
-[Lag Goggles: Legacy]
-type = modrinth
-destination = mods/laggoggles-mc1.7.10-4.12.3.jar
-versionId = tsi8i4LC
-sourceFileName = laggoggles-mc1.7.10-4.12.3.jar
 
 #[Logistics Pipes]
 #type = url
@@ -712,20 +571,6 @@ type = curseforge
 destination = mods/ModularPowersuits-1.7.10-0.11.1.117.jar
 projectId = 235442
 fileId = 2666986
-
-#[MachineMuse's Modular Powersuits Addons]
-#type = url
-#destination = mods/powersuitaddons-1.7.10-901.jar
-#url = https://www.dropbox.com/sh/ch94x4oyl9dlqub/AADERoz51faHx6OFjJjxR0_-a/1.7.10/powersuitaddons-1.7.10-901.jar?dl=1
-#side = both
-#MD5 = 88529bf099964a2f6986a5e593785417
-
-[Magic Bees]
-type = url
-destination = mods/MagicBees-2.5.16-GTNH.jar
-url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHorizons/MagicBees/2.5.16-GTNH/MagicBees-2.5.16-GTNH.jar
-side = both
-MD5 = 761d28dd17409bc31bd631c612df4d35
 
 [Mantle]
 type = url
@@ -765,18 +610,6 @@ url = https://micdoodle8.com/new-builds/GC-1.7/504/MicdoodleCore-1.7-3.0.12.504.
 side = both
 MD5 = 5665620a00c3b1f8ed59d18621c06cd6
 
-[MineFactory Reloaded 2]
-type = curseforge
-destination = mods/MineFactoryReloaded-[1.7.10]2.8.2B1-201.jar
-projectId = 66672
-fileId = 2366149
-
-[MineTweakerRecipeMaker]
-type = curseforge
-destination = mods/MineTweakerRecipeMaker-1.7.10-1.1.1.jar
-projectId = 226294
-fileId = 2381332
-
 [MrTJP Core]
 type = url
 destination = mods/1.7.10/MrTJPCore-1.1.4.jar
@@ -789,12 +622,6 @@ type = curseforge
 destination = mods/ModTweaker2-0.9.6.jar
 projectId = 220954
 fileId = 2313730
-
-[Morpheus]
-type = curseforge
-destination = mods/Morpheus-1.7.10-1.6.21.jar
-projectId = 69118
-fileId = 2280761
 
 [Natura]
 type = url
@@ -809,27 +636,6 @@ destination = mods/neodymium-1.7.10-0.1.6+nomixin.jar
 url = https://github.com/makamys/Neodymium/releases/download/0.1.6/neodymium-1.7.10-0.1.6+nomixin.jar
 side = client
 MD5 = 6d6690a2e999a2c4db10d1d9d1adf00a
-
-[Nether Ores]
-type = curseforge
-destination = mods/NetherOres-[1.7.10]2.3.1-22.jar
-projectId = 66675
-fileId = 2277488
-side = both
-
-[Netherite++]
-type = curseforge
-destination = mods/NetheritePlus_1.7.10_Beta0.9.jar
-projectId = 376911
-fileId = 2983061
-side = both
-
-#[Netherlicious]
-#type = curseforge
-#destination = mods/netherlicious-3.2.8.jar
-#projectId = 385860
-#fileId = 4363437
-#side = both
 
 [Nodal Mechanics]
 type = url
@@ -885,13 +691,15 @@ url = https://github.com/jss2a98aj/NotFine/releases/download/alpha-12/notfine-al
 side = client
 MD5 = e944d505eb803f5505e4df808b6894ca
 
-[Nuclear Control 2]
-type = url
-destination = mods/IC2NuclearControl-1.7.10-2.4.16.jar
-url = https://github.com/GTNewHorizons/Nuclear-Control/releases/download/2.4.16/IC2NuclearControl-1.7.10-2.4.16.jar
-side = both
-MD5 = e56bdf21356cbffefb0ea6902cad1b9e
+#requires IC2
+#[Nuclear Control 2]
+#type = url
+#destination = mods/IC2NuclearControl-1.7.10-2.4.16.jar
+#url = https://github.com/GTNewHorizons/Nuclear-Control/releases/download/2.4.16/IC2NuclearControl-1.7.10-2.4.16.jar
+#side = both
+#MD5 = e56bdf21356cbffefb0ea6902cad1b9e
 
+#replace with open source fork
 [Numina Patched]
 type = curseforge
 destination = mods/Numina-0.4.1.0-kmecpp-3.jar
@@ -972,12 +780,7 @@ sourceFileName = OptionsEnforcer-1.7.10-1.4.jar
 #side = both
 #MD5 = 54ebd6002f938b84e5b272a1c455aec9
 
-[Portal Gun]
-type = curseforge
-destination = mods/PortalGun-4.0.0-beta-6-fix-1.jar
-projectId = 229084
-fileId = 2480016
-
+#1.7.10 isnt open source maybe fixible?
 [Project E]
 type = curseforge
 destination = mods/ProjectE-1.7.10-PE1.10.1.jar
@@ -990,36 +793,18 @@ destination = mods/purefood-mc1.7.10-af6abb4.jar
 url = https://cdn.discordapp.com/attachments/741043720761376883/1072658490432168086/purefood-mc1.7.10-af6abb4.jar
 MD5 = 6eb4eddb6459e83db9b436c3ae245aea
 
-[Railcraft]
-type = url
-destination = mods/Railcraft-9.13.17.jar
-url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHorizons/Railcraft/9.13.17/Railcraft-9.13.17.jar
-MD5 = 2b2464aa20fb15aed1c4807f6b667ac5
-
 [Realistic Terrain Generation]
 type = curseforge
 destination = mods/RTG-1.7.10-1.1.1.7.jar
 projectId = 237989
 fileId = 2521557
 
-[RedPower 2]
-type = url
-destination = mods/RedPower-2.0pr7-dirty.jar
-url = https://b2.mcarchive.net/file/mcarchive/453b1413b0ce8a96efccd0d7bdc369567406acfa4f23062b5c2e549dc5650465/RedPower-2.0pr7-dirty.jar
-side = both
-SHA-256 = 453b1413b0ce8a96efccd0d7bdc369567406acfa4f23062b5c2e549dc5650465
-
-[Redstone Armory]
-type = curseforge
-destination = mods/RedstoneArmory-1.7.10-1.2.0-41.jar
-projectId = 229339
-fileId = 2263890
-
-[Redstone Arsenal]
-type = curseforge
-destination = mods/RedstoneArsenal-[1.7.10]1.1.2-92.jar
-projectId = 70631
-fileId = 2277490
+#foss but deps redstone arsenal
+#[Redstone Armory]
+#type = curseforge
+#destination = mods/RedstoneArmory-1.7.10-1.2.0-41.jar
+#projectId = 229339
+#fileId = 2263890
 
 [RF Drills]
 type = modrinth
@@ -1027,17 +812,12 @@ destination = mods/RFDrills-1.7.10-1.7.3.jar
 versionId = ap92MLy1
 sourceFileName = RFDrills-1.7.10-1.7.3.jar
 
+#improperly licensed on 1.7.10
 [RF Tools]
 type = modrinth
 destination = mods/rftools-4.23.jar
 versionId = yh0gvwT5
 sourceFileName = rftools-4.23.jar
-
-[Runic Dungeons]
-type = curseforge
-destination = mods/RunicDungeons-1.1.7b.jar
-projectId = 227065
-fileId = 2310826
 
 [Simply Jetpacks]
 type = curseforge
@@ -1058,18 +838,6 @@ fileId = 2267185
 #url = https://github.com/makamys/SmartRender/releases/download/2.1/SmartRender-1.7.10-2.1.jar
 #side = both
 #MD5 = d171ebd7d827018836975af699a89670
-
-[Smooth Font]
-type = curseforge
-destination = mods/SmoothFont-1.7.10-1.15.3.jar
-projectId = 285742
-fileId = 2614474
-
-[Solar Expansion]
-type = curseforge
-destination = mods/SolarExpansion-Editable-1.6a.jar
-projectId = 223583
-fileId = 2236242
 
 [Special AI]
 type = url
@@ -1092,12 +860,6 @@ url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHo
 side = both
 MD5 = 538acdc988653bd81879303cbc748f25
 
-[Squidless]
-type = curseforge
-destination = mods/squidless-1.7.10-0.6.1.jar
-projectId = 226115
-fileId = 2233504
-
 [Steve's Addons]
 type = url
 destination = mods/StevesAddons-0.10.27.jar
@@ -1119,45 +881,12 @@ url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHo
 side = both
 MD5 = dfcf1b8f59e5b12f01f7a4001e4a1461
 
-[Steve's Workshop]
-type = curseforge
-destination = mods/StevesWorkshop-0.5.1.jar
-projectId = 223173
-fileId = 2214014
-
 [Storage Drawers]
 type = url
 destination = mods/StorageDrawers-1.11.19-GTNH.jar
 url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHorizons/StorageDrawers/1.11.19-GTNH/StorageDrawers-1.11.19-GTNH.jar
 side = both
 MD5 = 014731057d08fbddf3cd4c8a54bc061e
-
-[Storage Drawers: Forestry Pack]
-type = url
-destination = mods/StorageDrawers-Forestry-1.11.17-GTNH.jar
-url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHorizons/StorageDrawers-Forestry/1.11.17-GTNH/StorageDrawers-Forestry-1.11.17-GTNH.jar
-side = both
-MD5 = 981ff60fd8dc53242bc8682ac191168d
-
-[Storage Drawers: Misc Pack]
-type = url
-destination = mods/StorageDrawers-Misc-1.11.18-GTNH.jar
-url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHorizons/StorageDrawers-Misc/1.11.18-GTNH/StorageDrawers-Misc-1.11.18-GTNH.jar
-side = both
-MD5 = 5e698a016910030bbb1516d63e449294
-
-[Storage Drawers: Natura Pack]
-type = url
-destination = mods/StorageDrawersNatura-1.7.10-1.11.17-GTNH.jar
-url = https://github.com/GTNewHorizons/StorageDrawers-Natura/releases/download/1.11.17-GTNH/StorageDrawersNatura-1.7.10-1.11.17-GTNH.jar
-side = both
-MD5 = 5d7db17184e66c3768518d1fe1b17cfc
-
-[Super Sound Muffler: Legacy]
-type = modrinth
-destination = mods/ssmlegacy-mc1.7.10-1.1.1.jar
-versionId = pc9biPem
-sourceFileName = ssmlegacy-mc1.7.10-1.1.1.jar
 
 [Sync]
 type = curseforge
@@ -1170,13 +899,6 @@ type = modrinth
 destination = mods/tabfaces-0.0.17-mc1.7.10.jar
 versionId = jLeKskrJ
 sourceFileName = tabfaces-0.0.17-mc1.7.10.jar
-
-[Tainted Magic]
-type = url
-destination = mods/Tainted-Magic-1.7.10-8.1.1.1-GTNH.jar
-url = https://github.com/GTNewHorizons/Tainted-Magic/releases/download/8.1.1.1-GTNH/Tainted-Magic-1.7.10-8.1.1.1-GTNH.jar
-side = both
-MD5 = 1972afff31ce78769662b05a351f0263
 
 [Thaumcraft Inventory Scanning]
 type = url
@@ -1191,23 +913,17 @@ destination = mods/Thaumcraft4Tweaks-1.4.26.jar
 versionId = H02lMtci
 sourceFileName = Thaumcraft4Tweaks-1.4.26.jar
 
-[Thaumaturgical Knowledge]
-type = curseforge
-destination = mods/Thaumaturgical Knowledge-0.1.5.2 - 1.7.10.jar
-projectId = 233226
-fileId = 2286652
-
 [Thaumcraft 4]
 type = curseforge
 destination = mods/Thaumcraft-1.7.10-4.2.3.5.jar
 projectId = 223628
 fileId = 2227552
 
-[Thaumcraft - Not Enough Items Plugin]
-type = curseforge
-destination = mods/thaumcraftneiplugin-1.7.10-1.7a.jar
-projectId = 225095
-fileId = 2241913
+#[Thaumcraft - Not Enough Items Plugin]
+#type = curseforge
+#destination = mods/thaumcraftneiplugin-1.7.10-1.7a.jar
+#projectId = 225095
+#fileId = 2241913
 
 [Thaumcraft Research Tweaks]
 type = url
@@ -1258,37 +974,6 @@ url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHo
 side = both
 MD5 = edfaa0673d515d9742ab51bf88bf9741
 
-[Thaumic Horizons]
-type = url
-destination = mods/ThaumicHorizons-1.2.1.12.jar
-url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHorizons/ThaumicHorizons/1.2.1.12/ThaumicHorizons-1.2.1.12.jar
-side = both
-MD5 = 62edf5d5ba32cf715c16e65a9450ae4d
-
-[Thaumic Sanity]
-type = curseforge
-destination = mods/thaumicSanity-1.0-1.7.10-9.jar
-projectId = 238392
-fileId = 2268718
-
-[Thermal Dynamics]
-type = curseforge
-destination = mods/ThermalDynamics-[1.7.10]1.2.1-172.jar
-projectId = 227443
-fileId = 2388756
-
-[Thermal Expansion]
-type = curseforge
-destination = mods/ThermalExpansion-[1.7.10]4.1.5-248.jar
-projectId = 69163
-fileId = 2388758
-
-[Thermal Foundation]
-type = curseforge
-destination = mods/ThermalFoundation-[1.7.10]1.2.6-118.jar
-projectId = 222880
-fileId = 2388752
-
 [TileEntity Reset Fix]
 type = modrinth
 destination = mods/TileEntityResetFix-1.0.1-noreq.jar
@@ -1304,10 +989,10 @@ MD5 = 19eea64622dad2fc0947e2fed0e1a45f
 
 [Tinkers' Construct]
 type = url
-destination = mods/TinkersConstruct-1.9.18-GTNH.jar
-url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHorizons/TinkersConstruct/1.9.18-GTNH/TinkersConstruct-1.9.18-GTNH.jar
+destination = mods/TConstruct-1.9.23-GTNH.jar
+url = https://github.com/GTNewHorizons/TinkersConstruct/releases/download/1.9.23-GTNH/TConstruct-1.9.23-GTNH.jar
 side = both
-MD5 = ac0a7adae545c6eab43e4ba09ec5ab21
+MD5 = 4b7d4f88bab4e4ff070a12b58074acb1
 
 [Tinkers' Defense]
 type = curseforge
@@ -1335,6 +1020,7 @@ url = https://github.com/GTNewHorizons/Translocators/releases/download/1.1.2.20/
 side = both
 MD5 = 7fb35d8dee152ec17127ee0a2e69726e
 
+#arr replace with bauble expanded oriented witching gadgets fork
 [Traveller's Gear]
 type = curseforge
 destination = mods/TravellersGear-1.7.10-1.16.6.jar
@@ -1355,29 +1041,32 @@ url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHo
 side = both
 MD5 = 48118234c58c46db7bac68b33c045ad7
 
-#[UniDict]
-#type = curseforge
-#destination = mods/OpenPrinter-MC1.7.10-0.1.0.132.jar
-#projectId = 225127
-#fileId = 2289193
+[UniDict]
+type = curseforge
+destination = mods/UniDict-1.7.10-2.9.2.jar
+projectId = 244258
+fileId = 2329986
 
-#[UniMixins: Compatiblity]
-#type = curseforge
-#destination = mods/OpenPrinter-MC1.7.10-0.1.0.132.jar
-#projectId = 225127
-#fileId = 2289193
+[UniMixins: GTNHMixins]
+type = modrinth
+destination = mods/_unimixins-gtnhmixins-1.7.10-0.1.4+2.1.9.jar
+versionId = EsA32l71
+sourceFileName = _unimixins-gtnhmixins-1.7.10-0.1.4+2.1.9.jar
+side = both
 
-#[UniMixins: GTNHMixins]
-#type = curseforge
-#destination = mods/OpenPrinter-MC1.7.10-0.1.0.132.jar
-#projectId = 225127
-#fileId = 2289193
+[UniMixins: MixinGasm]
+type = modrinth
+destination = mods/_unimixins-mixingasm-1.7.10-0.1.4+0.2.2.jar
+versionId = EsA32l71
+sourceFileName = _unimixins-mixingasm-1.7.10-0.1.4+0.2.2.jar
+side = both
 
-#[UniMixins: SpongeMixins]
-#type = curseforge
-#destination = mods/OpenPrinter-MC1.7.10-0.1.0.132.jar
-#projectId = 225127
-#fileId = 2289193
+[UniMixins: SpongeMixins]
+type = modrinth
+destination = mods/_unimixins-spongemixins-1.7.10-0.1.4+gtnh.2.0.1.jar
+versionId = EsA32l71
+sourceFileName = _unimixins-spongemixins-1.7.10-0.1.4+gtnh.2.0.1.jar
+side = both
 
 [UniQ]
 type = curseforge
@@ -1391,6 +1080,7 @@ destination = mods/VillageNames-1.7.10-4.4.5a.jar
 versionId = P1ahs6At
 sourceFileName = VillageNames-1.7.10-4.4.5a.jar
 
+#arr replace when possible
 [Villager Meta Fix]
 type = curseforge
 destination = mods/VillagerMetaFix-0.3.jar
@@ -1439,24 +1129,25 @@ url = https://github.com/GTNewHorizons/WAWLA/releases/download/1.1.3-GTNH/Wawla-
 side = both
 MD5 = 9cd4aa559b0138c15e693e9100593869
 
-[Witchery]
-type = curseforge
-destination = mods/witchery-1.7.10-0.24.1.jar
-projectId = 69673
-fileId = 2234410
+#arr replace when possible
+#[Witchery]
+#type = curseforge
+#destination = mods/witchery-1.7.10-0.24.1.jar
+#projectId = 69673
+#fileId = 2234410
 
-[Witchery Patch]
-type = curseforge
-destination = mods/WitcheryPatch-1.7.10-1.0.0.jar
-projectId = 253015
-fileId = 2340610
+#[Witchery Patch]
+#type = curseforge
+#destination = mods/WitcheryPatch-1.7.10-1.0.0.jar
+#projectId = 253015
+#fileId = 2340610
 
-[Witchery Extra]
-type = url
-destination = mods/WitcheryExtras-1.1.13.jar
-url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHorizons/WitcheryExtras/1.1.13/WitcheryExtras-1.1.13.jar
-side = both
-MD5 = c1ac3aa7a16bf157d38fd60614dfc027
+#[Witchery Extra]
+#type = url
+#destination = mods/WitcheryExtras-1.1.13.jar
+#url = http://jenkins.usrv.eu:8081/nexus/content/groups/public/com/github/GTNewHorizons/WitcheryExtras/1.1.13/WitcheryExtras-1.1.13.jar
+#side = both
+#MD5 = c1ac3aa7a16bf157d38fd60614dfc027
 
 [Witching Gadgets]
 type = url
@@ -1508,12 +1199,6 @@ type = curseforge
 destination = resourcepacks/Unity-1.3.2.zip
 projectId = 222097
 fileId = 2369895
-
-[Music for Hardcore Ender Expansion]
-type = curseforge
-destination = resourcepacks/HEE Music v1.0.zip
-projectId = 240485
-fileId = 2274005
 
 [MAtmos 2016 Default]
 type = curseforge

@@ -1,6 +1,6 @@
 use functions in build.sh to clean it up
 build curseforge, modrinth, maybe technic? zips
-add fastcraft to java8 builds if its not slower than archaicfix chunk occlusion/multithreading, and the neodymium optifine spoofer gets released
-fix shadowmetal
-pr tinkered constructor changes into gtnh tinkers construct
 fix id conflicts
+gt6 update?
+remove all arr mods
+temporarily disable nether and end while waiting on EFR updates
